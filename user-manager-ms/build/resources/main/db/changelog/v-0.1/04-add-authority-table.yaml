@@ -1,22 +1,22 @@
 databaseChangeLog:
   - changeSet:
-      id: 20230313-04
+      id: 20230313-01
       author: jeyhun
       changes:
         - insert:
-            tableName: user_roles
+            tableName: authorities
             columns:
               - column:
                   name: name
                   value: 'USER'
         - insert:
-            tableName: user_roles
+            tableName: authorities
             columns:
               - column:
                   name: name
                   value: 'ADMIN'
         - insert:
-            tableName: user_roles
+            tableName: authorities
             columns:
               - column:
                   name: name

@@ -36,10 +36,10 @@ databaseChangeLog:
                   type: VARCHAR(250)
               - column:
                   name: birthday
-                  type: DATE
+                  type: varchar(255)
               - column:
                   name: user_status
-                  type: enum
+                  type: varchar(255)
               - column:
                   name: created_date
-                  type: timestamp
+                  type: date

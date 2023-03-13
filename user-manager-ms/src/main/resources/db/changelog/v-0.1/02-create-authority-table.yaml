@@ -4,7 +4,7 @@ databaseChangeLog:
       author: jeyhun
       changes:
         - createTable:
-            tableName: roles
+            tableName: authorities
             columns:
               - column:
                   name: id
@@ -12,9 +12,10 @@ databaseChangeLog:
                   autoIncrement: true
                   constraints:
                     primaryKey: true
-                    primaryKeyName: role_pk
+                    primaryKeyName: authority_pk
                     nullable: false
               - column:
                   name: name
                   type: VARCHAR(255)
-                  nullable: false
+                  constraints:
+                    nullable: false

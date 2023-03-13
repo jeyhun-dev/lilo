@@ -18,11 +18,11 @@ import lombok.experimental.FieldDefaults;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = RoleEntity.TABLE_NAME)
+@Table(name = Authority.TABLE_NAME)
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class RoleEntity {
+public class Authority {
 
-    public static final String TABLE_NAME = "roles";
+    public static final String TABLE_NAME = "authorities";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

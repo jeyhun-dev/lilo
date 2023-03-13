@@ -2,10 +2,12 @@ package az.cmammad.common.entity;
 
 import az.cmammad.common.enumeration.UserStatus;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -81,14 +83,14 @@ public class UserEntity {
     Date createdDate;
 
     @JsonIgnore
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     @JoinTable(
-            name = "user_roles",
+            name = "user_authorities",
             joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")},
-            inverseJoinColumns = {@JoinColumn(name = "role_name", referencedColumnName = "name")})
-    @BatchSize(size = 20)
+            inverseJoinColumns = {@JoinColumn(name = "authority_name", referencedColumnName = "name")})
+//    @BatchSize(size = 20)
     @Builder.Default
-    private Set<RoleEntity> roles = new HashSet<>();
+    private Set<Authority> authorities = new HashSet<>();
 
     @PrePersist
     public void prePersist() {
