@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20230313-02
+      author: jeyhun
+      changes:
+        - createTable:
+            tableName: roles
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: role_pk
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+                  nullable: false

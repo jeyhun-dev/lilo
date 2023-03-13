@@ -69,6 +69,9 @@ public class UserEntity {
     @Column(name = "phone")
     String phone;
 
+    @Column(name = "birthday")
+    String birthday;
+
     @Enumerated(value = EnumType.STRING)
     UserStatus userStatus;
 
@@ -80,9 +83,9 @@ public class UserEntity {
     @JsonIgnore
     @ManyToMany
     @JoinTable(
-            name = "user_authority",
+            name = "user_roles",
             joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")},
-            inverseJoinColumns = {@JoinColumn(name = "role_id", referencedColumnName = "id")})
+            inverseJoinColumns = {@JoinColumn(name = "role_name", referencedColumnName = "name")})
     @BatchSize(size = 20)
     @Builder.Default
     private Set<RoleEntity> roles = new HashSet<>();

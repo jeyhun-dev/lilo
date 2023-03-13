@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-security/lilo.common-security.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common-security/lilo.common-security.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/lilo.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/lilo.common.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lilo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lilo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-manager-ms/lilo.user-manager-ms.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-manager-ms/lilo.user-manager-ms.main.iml" />
     </modules>
   </component>
 </project>

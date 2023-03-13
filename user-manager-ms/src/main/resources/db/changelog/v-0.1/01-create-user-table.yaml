@@ -1,0 +1,45 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20230313-01
+      author: jeyhun
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: user_pk
+                    nullable: false
+              - column:
+                  name: username
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: full_name
+                  type: VARCHAR(255)
+              - column:
+                  name: password
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: address
+                  type: VARCHAR(255)
+              - column:
+                  name: phone
+                  type: VARCHAR(250)
+              - column:
+                  name: birthday
+                  type: DATE
+              - column:
+                  name: user_status
+                  type: enum
+              - column:
+                  name: created_date
+                  type: timestamp

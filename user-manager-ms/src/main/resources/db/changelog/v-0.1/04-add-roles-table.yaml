@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20230313-04
+      author: jeyhun
+      changes:
+        - insert:
+            tableName: user_roles
+            columns:
+              - column:
+                  name: name
+                  value: 'USER'
+        - insert:
+            tableName: user_roles
+            columns:
+              - column:
+                  name: name
+                  value: 'ADMIN'
+        - insert:
+            tableName: user_roles
+            columns:
+              - column:
+                  name: name
+                  value: 'SUPER_USER'

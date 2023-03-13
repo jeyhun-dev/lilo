@@ -22,7 +22,7 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class RoleEntity {
 
-    public static final String TABLE_NAME = "user_roles";
+    public static final String TABLE_NAME = "roles";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
