@@ -1,4 +1,5 @@
 rootProject.name = 'lilo'
 include 'common'
 include 'common-security'
+include 'user-manager-ms' //8080
 
