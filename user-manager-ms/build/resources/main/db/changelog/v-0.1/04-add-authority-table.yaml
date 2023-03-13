@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20230313-01
+      author: jeyhun
+      changes:
+        - insert:
+            tableName: authorities
+            columns:
+              - column:
+                  name: name
+                  value: 'USER'
+        - insert:
+            tableName: authorities
+            columns:
+              - column:
+                  name: name
+                  value: 'ADMIN'
+        - insert:
+            tableName: authorities
+            columns:
+              - column:
+                  name: name
+                  value: 'SUPER_USER'
