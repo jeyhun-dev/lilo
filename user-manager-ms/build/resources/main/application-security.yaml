@@ -1,0 +1,3 @@
+spring:
+  secret-key: '2F423F4528482B4D6251655468576D5A7134743777217A24432646294A404E63'
+  issuer-value: 'Jeyhun Mammadsaidov'
