@@ -20,4 +20,4 @@ databaseChangeLog:
             columns:
               - column:
                   name: name
-                  value: 'SUPER_USER'
+                  value: 'COURIER'

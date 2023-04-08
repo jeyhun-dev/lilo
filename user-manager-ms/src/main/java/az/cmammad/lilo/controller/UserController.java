@@ -1,5 +1,6 @@
 package az.cmammad.lilo.controller;
 
+import az.cmammad.common.constant.AuthorityName;
 import az.cmammad.lilo.dto.SignUpRequestDto;
 import az.cmammad.lilo.dto.SignUpResponseDto;
 import az.cmammad.lilo.service.UserService;
@@ -23,6 +24,7 @@ public class UserController {
     @PostMapping("/sign-up")
     public ResponseEntity<SignUpResponseDto> signUp(@RequestBody SignUpRequestDto signUp) {
         log.info("This User is Registered: {}", signUp);
-        return new ResponseEntity<>(userService.register(signUp), HttpStatus.CREATED);
+        return new ResponseEntity<>(userService
+                .registerUser(signUp, AuthorityName.USER), HttpStatus.CREATED);
     }
 }

@@ -9,5 +9,4 @@ public class LiloApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(LiloApplication.class, args);
 	}
-
 }

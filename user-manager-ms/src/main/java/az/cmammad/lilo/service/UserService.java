@@ -5,5 +5,6 @@ import az.cmammad.lilo.dto.SignUpResponseDto;
 
 public interface UserService {
 
-    SignUpResponseDto register(SignUpRequestDto signUpRequestDto);
+    SignUpResponseDto registerUser(SignUpRequestDto signUpRequestDto, String roleName);
+    //registerCourier
 }

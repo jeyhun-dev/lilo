@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-manager-ms/Documents.MyGitHub.lilo.user-manager-ms.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-manager-ms/Documents.MyGitHub.lilo.user-manager-ms.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-security/MyGitHub.lilo.common-security.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common-security/MyGitHub.lilo.common-security.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/MyGitHub.lilo.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/MyGitHub.lilo.common.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-manager-ms/MyGitHub.lilo.user-manager-ms.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-manager-ms/MyGitHub.lilo.user-manager-ms.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-security/az.cmammad.lilo.common-security.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common-security/az.cmammad.lilo.common-security.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/az.cmammad.lilo.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/az.cmammad.lilo.common.main.iml" />

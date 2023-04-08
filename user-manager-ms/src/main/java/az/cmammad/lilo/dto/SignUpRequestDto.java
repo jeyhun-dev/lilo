@@ -13,5 +13,10 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class SignUpRequestDto {
-
+    String username;
+    String password;
+    String fullName;
+    String address;
+    String phone;
+    String birthday;
 }

@@ -13,4 +13,11 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class SignUpResponseDto {
+    Long id;
+    String username;
+    String password;
+    String fullName;
+    String address;
+    String phone;
+    String birthday;
 }
